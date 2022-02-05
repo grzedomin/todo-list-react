@@ -1,0 +1,22 @@
+.section__button {
+    background: none;
+    border: none;
+    color: teal;
+    margin: 0 5px;
+    transition: 0.5s;
+}
+
+@media (max-width:767px){
+    .section__button {
+        padding-top: 15px;
+    }
+}
+
+.section__button:hover {
+    cursor: pointer;
+    color: rgb(16, 175, 175);
+}
+
+.section__button:disabled{
+    color: rgb(189, 189, 189);
+}
