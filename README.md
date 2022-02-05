@@ -1,8 +1,25 @@
-# Tasks list app
+# Task List app in React
 
-Description
+## This is an task list app when you can write your to-do tasks, mark them done and delete them.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Link: 
+https://grzedomin.github.io/todo-list-react/
+
+## How to use?
+1. Write a new task
+2. Press the button to add task into the list
+3. If your task is done, please click on the green field.
+4. If you want to delete your task, please click the red button with bin icon.
+
+
+## Used technologies:
+- HTML
+- CSS (Flex)
+- JavaScript
+- BEM
+- MediaQueries
+
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
