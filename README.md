@@ -18,6 +18,8 @@ https://grzedomin.github.io/todo-list-react/
 - JavaScript
 - BEM
 - MediaQueries
+- React
+- create-react-app
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
