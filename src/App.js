@@ -6,13 +6,16 @@ import Header from "./Header";
 import Container from "./Container";
 import React, { useState } from 'react';
 
-const tasks = [
-    { id: 1, content: "przejść na react.js", done: false },
-    { id: 2, content: "zjeść obiad", done: true },
-];
+
 
 
 function App() {
+    const [tasks, setTasks] = useState([
+        { id: 1, content: "przejść na react.js", done: false },
+        { id: 2, content: "zjeść obiad", done: false },
+        { id: 3, content: "zjeść kolacje", done: false },
+    ]);
+    
     const [hideDone, setHideDone] = useState(false);
 
     const toggleHideDone = () => {
