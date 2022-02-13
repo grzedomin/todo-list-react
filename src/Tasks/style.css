@@ -39,7 +39,11 @@ font-size: 14px;
 min-height: 34px;
 min-width: 34px;
 border: none;
+background: url(/public/trash.png);
 background-color: rgb(206, 10, 49);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 60%;
 transition: 0.5s;
 }
 
