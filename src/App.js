@@ -15,11 +15,15 @@ function App() {
         { id: 2, content: "zjeść obiad", done: false },
         { id: 3, content: "zjeść kolacje", done: false },
     ]);
-    
+
     const [hideDone, setHideDone] = useState(false);
 
     const toggleHideDone = () => {
         setHideDone(hideDone => !hideDone);
+    };
+
+    const taskRemove = (id) => {
+      setTasks(tasks => tasks.filter(task => task.id !== id));
     };
 
     return (
@@ -37,6 +41,7 @@ function App() {
                         <Tasks
                             tasks={tasks}
                             hideDone={hideDone}
+                            taskRemove={taskRemove}
                         />}
 
                     extraHeaderContent={
