@@ -1,6 +1,6 @@
 # Task List app in React
 
-## This is an task list app when you can write your to-do tasks, mark them done and delete them.
+## This is a task list app where you can write your to-do tasks, mark them done and delete them.
 
 ## Link: 
 https://grzedomin.github.io/todo-list-react/
