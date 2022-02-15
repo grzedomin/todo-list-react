@@ -10,11 +10,7 @@ import React, { useState } from 'react';
 
 
 function App() {
-    const [tasks, setTasks] = useState([
-        { id: 1, content: "przejść na react.js", done: false },
-        { id: 2, content: "zjeść obiad", done: false },
-        { id: 3, content: "zjeść kolacje", done: false },
-    ]);
+    const [tasks, setTasks] = useState([]);
 
     const [hideDone, setHideDone] = useState(false);
 
