@@ -6,6 +6,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
         {tasks.length > 0 && (
             <React.Fragment>
                 <button
+                    disabled={tasks.every(({ done }) => !done)}
                     onClick={toggleHideDone}
                     className="section__button">
                     {hideDone ? "Pokaż" : "Ukryj"} ukończone
