@@ -1,8 +1,6 @@
 import "./style.css";
 import { useState } from 'react';
 
-
-
 const Form = ({ addNewTask }) => {
 
     const [newTaskContent, setNewTaskContent] = useState("");
@@ -30,5 +28,4 @@ const Form = ({ addNewTask }) => {
         </form>
     );
 }
-
 export default Form;

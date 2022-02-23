@@ -6,9 +6,6 @@ import Header from "./Header";
 import Container from "./Container";
 import React, { useState } from 'react';
 
-
-
-
 function App() {
     const [tasks, setTasks] = useState([]);
 
@@ -44,8 +41,6 @@ function App() {
             id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1
         }])
     };
-
-
 
     return (
         <Container>
