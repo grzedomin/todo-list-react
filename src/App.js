@@ -4,10 +4,14 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function App() {
     const [tasks, setTasks] = useState([]);
+
+    useEffect(() => {
+        localStorage.setItem("taskContent", JSON.stringify(tasks))
+    }, [tasks]);
 
     const [hideDone, setHideDone] = useState(false);
 
