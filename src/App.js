@@ -7,7 +7,10 @@ import Container from "./Container";
 import React, { useState, useEffect } from 'react';
 
 function App() {
-    const [tasks, setTasks] = useState([]);
+    const [tasks, setTasks] = useState(() => {
+        const getLocalData = localStorage.getItem("taskContent");
+        return getLocalData ? JSON.parse(getLocalData) : [];
+    });
 
     useEffect(() => {
         localStorage.setItem("taskContent", JSON.stringify(tasks))
