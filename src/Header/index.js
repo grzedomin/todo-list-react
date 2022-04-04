@@ -1,8 +1,8 @@
-import "./style.css";
+import { Caption } from "./styled";
 
-const Header = ({title}) => (
-    <header className="container__header">
+const Header = ({ title }) => (
+    <Caption>
         {title}
-    </header>
+    </Caption>
 );
 export default Header;
