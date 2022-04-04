@@ -36,3 +36,11 @@
     transform:scale(115%);
     cursor: pointer;
 }
+
+.section__form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}

@@ -1,16 +1,16 @@
-import "./style.css";
+import { Component, Header, SubHeader, Content } from "./styled";
 
-const Section = ({title, body, extraHeaderContent}) => (
-    <section className="section">
-        <header className="section__header">
-            <h2 className="section__subHeader">{title}</h2>
+const Section = ({ title, body, extraHeaderContent }) => (
+    <Component>
+        <Header>
+            <SubHeader>{title}</SubHeader>
             {extraHeaderContent}
-        </header>
+        </Header>
 
-        <div className="main__taskList">
+        <Content>
             {body}
-        </div>
-    </section>
+        </Content>
+    </Component>
 
 );
 export default Section;
