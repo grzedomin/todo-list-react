@@ -3,6 +3,10 @@
     box-shadow: 0 0 5px #ddd;
     margin-bottom: 10px;
 }
+.main__taskList{
+    padding: 20px;
+    font-size: 15px;
+} 
 
 .section__header {
     display: flex;
