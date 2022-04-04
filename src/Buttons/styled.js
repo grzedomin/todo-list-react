@@ -1,6 +1,16 @@
 import styled from "styled-components";
 
-export const Button = styled.div`
+export const ButtonsContainer = styled.div`
+
+    @media (max-width:767px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-top: 15px;
+    }
+`;
+
+export const Button = styled.button`
     background: none;
     border: none;
     color: teal;
@@ -15,9 +25,5 @@ export const Button = styled.div`
     &:disabled{
         color: rgb(189, 189, 189);
         cursor: default;
-    }
-
-    @media (max-width:767px){
-        padding-top: 15px;
     }
 `;

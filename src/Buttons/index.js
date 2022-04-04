@@ -1,9 +1,9 @@
 import React from "react";
-import { Button } from "./styled";
+import { Button, ButtonsContainer } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
-    <div>
-        {tasks.length > 0 && (
+    <ButtonsContainer>
+            {tasks.length > 0 && (
             <>
                 <Button
                     disabled={tasks.every(({ done }) => !done)}
@@ -20,6 +20,6 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
                 </Button>
             </>
         )}
-    </div>
+    </ButtonsContainer>
 );
 export default Buttons;
