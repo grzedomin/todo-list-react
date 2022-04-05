@@ -51,9 +51,7 @@ function App() {
 
     return (
         <Container>
-            <Header title="Lista zadań" />
-
-            <main className="main">
+            <Header title="Lista zadań" />         
                 <Section
                     title="Dodaj nowe zadanie"
                     body={
@@ -79,7 +77,6 @@ function App() {
                             setAllDone={setAllDone}
                         />}
                 />
-            </main>
         </Container>
     );
 }
