@@ -1,6 +1,6 @@
 import { List, Item, Content, Button } from "./styled";
 
-const Tasks = ({ tasks, hideDone, taskRemove, toggleDone }) => (
+const Tasks = ({ tasks, hideDone, removeTask, toggleDone }) => (
     <List>
         {tasks.map(task => (
             <Item
@@ -21,7 +21,7 @@ const Tasks = ({ tasks, hideDone, taskRemove, toggleDone }) => (
                 </Content>
                 <Button
                     remove
-                    onClick={() => taskRemove(task.id)}
+                    onClick={() => removeTask(task.id)}
                 >
                 </Button>
             </Item>

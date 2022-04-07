@@ -56,8 +56,6 @@ export const Button = styled.button`
         }
     `}
 
-
-
     ${({ remove }) => remove && css`
         background: url("${trash}");
         background-color: rgb(206, 10, 49);
