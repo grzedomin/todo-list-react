@@ -20,6 +20,9 @@ https://grzedomin.github.io/todo-list-react/
 - MediaQueries
 - React
 - create-react-app
+- React hooks
+- custom hooks
+- Styled-compontents
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
