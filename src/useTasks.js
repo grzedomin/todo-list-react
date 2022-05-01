@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 export const useTasks = () => {
 
     const [tasks, setTasks] = useState(() => {
-        const getLocalData = localStorage.getItem("taskContent");
-        return getLocalData ? JSON.parse(getLocalData) : [];
+        const localStorageData = localStorage.getItem("taskContent");
+        return localStorageData ? JSON.parse(localStorageData) : [];
     });
     useEffect(() => {
         localStorage.setItem("taskContent", JSON.stringify(tasks))
