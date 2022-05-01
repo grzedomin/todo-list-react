@@ -9,14 +9,13 @@ export const StyledForm = styled.form`
 `;
 
 export const Input = styled.input`
-    width: 100%;
-    max-width: 600px;
+    flex-basis: 75%;
     min-height: 30px;
     border: 1px solid #bbb;
     border-radius: 3px;
     padding: 5px;
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
         flex-basis: 100%;
     }
 `;
@@ -24,7 +23,6 @@ export const Input = styled.input`
 export const Button = styled.button`
     padding: 10px;
     border: none;
-    margin-left: 10px;
     background-color: teal;
     color: #fff;
     transition: 0.5s;
