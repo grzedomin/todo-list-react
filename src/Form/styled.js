@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FormContent = styled.form`
+export const StyledForm = styled.form`
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;

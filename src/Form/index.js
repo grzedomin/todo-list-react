@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Input, Button, FormContent } from "./styled";
+import { Input, Button, StyledForm } from "./styled";
 
 const Form = ({ addNewTask }) => {
 
@@ -23,7 +23,7 @@ const Form = ({ addNewTask }) => {
     };
 
     return (
-        <FormContent
+        <StyledForm
             onSubmit={onFormSubmit}
         >
             <Input
@@ -34,7 +34,7 @@ const Form = ({ addNewTask }) => {
                 autoFocus
             />
             <Button>Dodaj zadanie</Button>
-        </FormContent>
+        </StyledForm>
     );
 }
 export default Form;
