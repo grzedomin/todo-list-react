@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import trash from "../trash.png";
+import trash from "./trash.png";
 
 export const List = styled.ul`
     padding: 0px;
