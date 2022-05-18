@@ -23,6 +23,8 @@ https://grzedomin.github.io/todo-list-react/
 - React hooks
 - custom hooks
 - Styled-compontents
+- Redux
+- React-redux
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
