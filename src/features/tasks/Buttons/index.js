@@ -8,7 +8,7 @@ const Buttons = () => {
     const hideDone = useSelector(selectHideDone);
     const areTasksEmpty = useSelector(selectTasksEmpty);
     const dispatch = useDispatch();
-    
+
     return (
         <ButtonsContainer>
             {!areTasksEmpty && (
