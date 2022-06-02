@@ -22,6 +22,10 @@ export const Header = styled.header`
 
 export const SubHeader = styled.h2`
     margin: 0px;
+
+    @media (max-width: 767px) {
+     margin-bottom: 10px;
+    }
 `;
 
 export const Content = styled.div`
