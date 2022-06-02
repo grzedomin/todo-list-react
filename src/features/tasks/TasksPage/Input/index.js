@@ -13,9 +13,6 @@ export const Input = styled.input`
 `;
 
 export const Wrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
 `;
