@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import trash from "./trash.png";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
     padding: 0px;
@@ -67,4 +68,19 @@ export const Button = styled.button`
             background-color: rgb(252, 36, 80);
         }
     `}
+`;
+
+const activeClassName = "active";
+
+export const StyledLink = styled(Link).attrs(() => ({ activeClassName }))`
+    text-decoration: none;
+    color: #4d4d4d;
+    transition: 0.5s;
+    &.${activeClassName} {
+        color: #4d4d4d;
+        text-decoration: none;
+    }
+    &:hover{
+        color: #737373;
+    };
 `;
