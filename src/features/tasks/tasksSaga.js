@@ -5,6 +5,7 @@ import { fetchExampleTasks, selectTasks, setTasks } from "./tasksSlice";
 
 function* fetchExampleTasksHandler() {
     try {
+        yield delay(1000);
         const exampleTasks = yield call(getExampleTasks);
         yield put(setTasks(exampleTasks));
     }
