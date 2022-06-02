@@ -8,18 +8,6 @@ export const StyledForm = styled.form`
     align-items: center;
 `;
 
-export const Input = styled.input`
-    flex-basis: 75%;
-    min-height: 30px;
-    border: 1px solid #bbb;
-    border-radius: 3px;
-    padding: 5px;
-
-    @media (max-width: 767px) {
-        flex-basis: 100%;
-    }
-`;
-
 export const Button = styled.button`
     padding: 10px;
     border: none;
