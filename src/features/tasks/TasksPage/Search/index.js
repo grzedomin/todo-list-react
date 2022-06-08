@@ -1,5 +1,5 @@
 import { Wrapper, Input } from "../Input";
-import { useHistory, useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory, useLocation } from "react-router-dom";
 import searchQueryParamName from "../searchQueryParamName";
 
 export default () => {
