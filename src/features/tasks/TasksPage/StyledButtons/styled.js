@@ -27,3 +27,7 @@ export const Button = styled.button`
         cursor: default;
     }
 `;
+
+export const Error = styled.span`
+    color: crimson;
+`;

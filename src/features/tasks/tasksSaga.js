@@ -11,7 +11,6 @@ function* fetchExampleTasksHandler() {
         yield put(fetchLoadingStateSuccess());
     }
     catch (error) {
-        yield call(alert, "Coś poszło nie tak!");
         yield put(fetchLoadingStateError());
     }
 };
@@ -24,5 +23,4 @@ function* saveTasksInLocalStorageHandler() {
 export function* tasksSaga() {
     yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
     yield takeEvery("*", saveTasksInLocalStorageHandler);
-
 };
