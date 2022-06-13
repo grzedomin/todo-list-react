@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { Button, Error } from "../StyledButtons/styled";
-import { fetchExampleTasks, selectIsError, selectIsLoading } from "../../tasksSlice";
+import { Button, Error } from "../styled";
+import { fetchExampleTasks, selectIsError, selectIsLoading } from "../../../tasksSlice";
 
 export default () => {
     const dispatch = useDispatch();
