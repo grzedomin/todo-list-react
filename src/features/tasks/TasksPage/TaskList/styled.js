@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import trash from "./trash.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const List = styled.ul`
     padding: 0px;
@@ -72,14 +72,17 @@ export const Button = styled.button`
 
 const activeClassName = "active";
 
-export const StyledLink = styled(Link).attrs(() => ({ activeClassName }))`
+export const StyledLink = styled(NavLink)`
     text-decoration: none;
     color: #4d4d4d;
     transition: 0.5s;
-    &.${activeClassName} {
-        color: #4d4d4d;
+
+    &:active {
+        color: #fff;
+        font-weight: bolder;
         text-decoration: none;
     }
+
     &:hover{
         color: #737373;
     };
