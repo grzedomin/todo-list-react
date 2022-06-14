@@ -25,6 +25,10 @@ https://grzedomin.github.io/todo-list-react/
 - Styled-compontents
 - Redux
 - React-redux
+- Redux-saga
+- React Router
+- Promises
+- API
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
