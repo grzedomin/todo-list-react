@@ -7,9 +7,11 @@ https://grzedomin.github.io/todo-list-react/
 
 ## How to use?
 1. Write a new task
-2. Press the button to add task into the list
+2. Press the button to add task to the list
 3. If your task is done, please click on the green field.
 4. If you want to delete your task, please click the red button with bin icon.
+5. If you want to see more info about task click on the task name.
+6. To see the info about author please use the navigation at the top of the page.
 
 
 ## Used technologies:
