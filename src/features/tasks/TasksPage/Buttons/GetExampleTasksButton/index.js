@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Button, Error } from "../styled";
 import { fetchExampleTasks, selectIsError, selectIsLoading } from "../../../tasksSlice";
 
-export default () => {
+const GetExampleTasksButton = () => {
     const dispatch = useDispatch();
     const loading = useSelector(selectIsLoading);
     const error = useSelector(selectIsError);
@@ -24,3 +24,4 @@ export default () => {
         </>
     );
 };
+export default GetExampleTasksButton;
