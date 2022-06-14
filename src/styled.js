@@ -1,12 +1,10 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-const activeClassName = "active";
-
-export const StyledNavLink = styled(NavLink).attrs(() => ({ activeClassName}))`
+export const StyledNavLink = styled(NavLink)`
     text-decoration: none;
     color: #fff;
-    &.${activeClassName} {
+    &.active {
         color: #fff;
         font-weight: bolder;
         text-decoration: none;
