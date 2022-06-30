@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
-import trash from "./trash.png";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { ReactComponent as IconTrash } from "./icon-trash.svg"
 
 export const List = styled.ul`
     padding: 0px;
@@ -38,6 +38,7 @@ export const Button = styled.button`
     min-width: 34px;
     border: none;
     transition: 0.5s;
+    border-radius: 2px;
     font-size: 19px;
 
     &:hover{
@@ -58,7 +59,6 @@ export const Button = styled.button`
     `}
 
     ${({ remove }) => remove && css`
-        background: url("${trash}");
         background-color: rgb(206, 10, 49);
         background-position: center;
         background-repeat: no-repeat;
@@ -69,8 +69,6 @@ export const Button = styled.button`
         }
     `}
 `;
-
-const activeClassName = "active";
 
 export const StyledLink = styled(NavLink)`
     text-decoration: none;
@@ -86,4 +84,8 @@ export const StyledLink = styled(NavLink)`
     &:hover{
         color: #737373;
     };
+`;
+
+export const Icon = styled(IconTrash)`
+    display: flex;
 `;

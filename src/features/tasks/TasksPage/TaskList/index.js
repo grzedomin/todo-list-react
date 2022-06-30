@@ -1,4 +1,4 @@
-import { List, Item, Content, Button, StyledLink } from "./styled";
+import { List, Item, Content, Button, StyledLink, Icon } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTaskDone, removeTask, selectHideDone, selectTasksByQuery } from "../../tasksSlice";
 import searchQueryParamName from "../searchQueryParamName";
@@ -33,6 +33,7 @@ const TaskList = () => {
                         remove
                         onClick={() => dispatch(removeTask(task.id))}
                     >
+                        <Icon />
                     </Button>
                 </Item>
             ))}
